@@ -30,8 +30,7 @@ public class App {
 
     public static void registrarProducto(){
         if (validarProductoRegistrado()) {
-            System.out.print("Ingrese el nombre del producto: ");
-            nombre = sc.nextLine();
+            nombre = solicitarNombre();
             precioUnitario = solicitarPrecioUnitario();
             cantidad = solicitarStock();
         }else{
@@ -72,6 +71,18 @@ public class App {
             }
         }while(!esCantidadValida(stock));
         return stock;
+    }
+
+    public static String solicitarNombre(){
+        String nombre;
+        do{
+            System.out.print("Ingrese el nombre del producto: ");
+            nombre = sc.nextLine();
+            if (!esNombreValido(nombre)) {
+                System.out.println("El nombre del producto debe ser valido. Intentelo nuevamente.");
+            }
+        }while(!esNombreValido(nombre));
+        return nombre;
     }
 
     public static void mostrarProductoActual() {
@@ -126,6 +137,10 @@ public class App {
 
     public static boolean esCantidadValida(int stock){
         return stock >= 0;
+    }
+
+    public static boolean esNombreValido(String nombre){
+        return !nombre.isBlank();
     }
 
     public static void limpiarDatos(){
