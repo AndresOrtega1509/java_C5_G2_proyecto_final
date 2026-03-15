@@ -10,6 +10,7 @@ public class App {
         registrarProducto();
         mostrarProductoActual();
         calcularValorTotalInventario();
+        mostrarResumenProducto();
     }
 
     public static void mostrarMenu() {
@@ -90,6 +91,32 @@ public class App {
             System.out.println("No hay datos registrados para calcular el valor total del inventario.");
         }
         return valorTotal;
+    }
+
+    public static void mostrarResumenProducto(){
+        if (cantidad != -1) {
+            System.out.println("--- Resumen del Producto ---");
+            System.out.println("Nombre: " + nombre);
+            System.out.printf("Precio Unitario: $%.2f%n", precioUnitario);
+            System.out.printf("Cantidad en Inventario: f%n", cantidad);
+            System.out.printf("Valor Total en Inventario: $%.2f%n", calcularValorTotalInventario() );
+            String estado = setEstadoStock();
+            System.out.println("Estado del Stock: " + estado);
+        }else{
+            System.out.println("No hay productos registrados para mostrar resumen.");
+        }
+    }
+
+    public static String setEstadoStock(){
+        String estado = "N/A";
+        if (cantidad < 5) {
+            estado = "Stock bajo";
+        } else if (cantidad >= 5 && cantidad <= 20) {
+            estado = "Stock suficiente";
+        }else{
+            estado = "Stock alto";
+        }
+        return estado;
     }
 
     public static boolean esPrecioValido(double precio){
