@@ -8,6 +8,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         mostrarMenu();
         registrarProducto();
+        mostrarProductoActual();
     }
 
     public static void mostrarMenu() {
@@ -68,6 +69,16 @@ public class App {
             }
         }while(!esCantidadValida(stock));
         return stock;
+    }
+
+    public static void mostrarProductoActual() {
+        if (cantidad != -1) {
+            System.out.println("Nombre: " + nombre);
+            System.out.println("Precio: " + precioUnitario);
+            System.out.println("Cantidad: " + cantidad);
+        }else{
+            System.out.println("No hay datos de producto registrados actualmente.");
+        }
     }
 
     public static boolean esPrecioValido(double precio){
