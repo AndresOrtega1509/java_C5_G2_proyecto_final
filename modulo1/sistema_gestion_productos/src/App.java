@@ -3,14 +3,15 @@ import java.util.Scanner;
 public class App {
     static Scanner sc = new Scanner(System.in);
     static String nombre = "N/A";
-    static double precioUnitario = -1;
-    static int cantidad = -1;
+    static double precioUnitario = 0;
+    static int cantidad = 0;
     public static void main(String[] args) throws Exception {
         mostrarMenu();
         registrarProducto();
         mostrarProductoActual();
         calcularValorTotalInventario();
         mostrarResumenProducto();
+        limpiarDatos();
     }
 
     public static void mostrarMenu() {
@@ -74,7 +75,7 @@ public class App {
     }
 
     public static void mostrarProductoActual() {
-        if (cantidad != -1) {
+        if (cantidad != 0) {
             System.out.println("Nombre: " + nombre);
             System.out.println("Precio: " + precioUnitario);
             System.out.println("Cantidad: " + cantidad);
@@ -84,7 +85,7 @@ public class App {
     }
 
     private static double calcularValorTotalInventario() {
-        double valorTotal = -1;
+        double valorTotal = 0;
         if (!nombre.equals("N/A")) {
             valorTotal = precioUnitario * cantidad;
         }else{
@@ -125,5 +126,12 @@ public class App {
 
     public static boolean esCantidadValida(int stock){
         return stock >= 0;
+    }
+
+    public static void limpiarDatos(){
+        nombre = "N/A";
+        precioUnitario = 0.0;
+        cantidad = 0;
+        System.out.println("Los datos del producto actual han sido borrados exitosamente.");
     }
 }
