@@ -3,15 +3,43 @@ import java.util.Scanner;
 public class App {
     static Scanner sc = new Scanner(System.in);
     static String nombre = "N/A";
-    static double precioUnitario = 0;
+    static double precioUnitario = 0.0;
     static int cantidad = 0;
     public static void main(String[] args) throws Exception {
-        mostrarMenu();
-        registrarProducto();
-        mostrarProductoActual();
-        calcularValorTotalInventario();
-        mostrarResumenProducto();
-        limpiarDatos();
+        int opcion;
+        do{
+            mostrarMenu();
+            opcion = sc.nextInt();
+            sc.nextLine(); //Limpiar buffer
+            switch (opcion) {
+                case 1:
+                    registrarProducto();
+                    break;
+                case 2:
+                    mostrarProductoActual();
+                    break;
+                case 3:
+                    double total = calcularValorTotalInventario();
+                    if (total != 0) {
+                        System.out.printf("Valor Total en Inventario: $%.2f%n", calcularValorTotalInventario());
+                    }
+                    break;
+                case 4:
+                    mostrarResumenProducto();
+                    break;
+                case 5:
+                    limpiarDatos();
+                    break;
+                case 0:
+                    System.out.println("Saliendo del sistema...");
+                    sc.close();
+                    break;
+                default:
+                    System.out.println("Ingrese una opción valida. Intentelo nuevamente.");
+                    break;
+            }
+
+        }while(opcion != 0);
     }
 
     public static void mostrarMenu() {
@@ -23,9 +51,9 @@ public class App {
                 4. Mostrar resumen completo del producto
                 5. Limpiar datos del producto actual
                 0. Salir
-                Ingrese su opción:
                 """;
-        System.out.println(opciones);
+        System.out.print(opciones);
+        System.out.print("Ingrese su opción: ");
     }
 
     public static void registrarProducto(){
@@ -40,13 +68,13 @@ public class App {
 
     public static boolean validarProductoRegistrado(){
         if (!nombre.equals("N/A")) {
-            System.out.print("Ya existe un producto registrado. Dese sobreescribir los datos? (s/n)");
+            System.out.print("Ya existe un producto registrado. Desea sobreescribir los datos? (s/n): ");
             String respuesta = sc.nextLine();
-            if (respuesta.equalsIgnoreCase("s")) {
-                return true;
+            if (!respuesta.equalsIgnoreCase("s")) {
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
     public static double solicitarPrecioUnitario(){
@@ -87,8 +115,9 @@ public class App {
 
     public static void mostrarProductoActual() {
         if (cantidad != 0) {
+            System.out.println("--- Información del producto ---");
             System.out.println("Nombre: " + nombre);
-            System.out.println("Precio: " + precioUnitario);
+            System.out.printf("Precio: %.2f%n" , precioUnitario);
             System.out.println("Cantidad: " + cantidad);
         }else{
             System.out.println("No hay datos de producto registrados actualmente.");
@@ -110,8 +139,8 @@ public class App {
             System.out.println("--- Resumen del Producto ---");
             System.out.println("Nombre: " + nombre);
             System.out.printf("Precio Unitario: $%.2f%n", precioUnitario);
-            System.out.printf("Cantidad en Inventario: f%n", cantidad);
-            System.out.printf("Valor Total en Inventario: $%.2f%n", calcularValorTotalInventario() );
+            System.out.printf("Cantidad en Inventario: %d%n", cantidad);
+            System.out.printf("Valor Total en Inventario: $%.2f%n", calcularValorTotalInventario());
             String estado = setEstadoStock();
             System.out.println("Estado del Stock: " + estado);
         }else{
