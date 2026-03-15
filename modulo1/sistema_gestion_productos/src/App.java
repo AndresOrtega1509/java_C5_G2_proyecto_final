@@ -9,6 +9,7 @@ public class App {
         mostrarMenu();
         registrarProducto();
         mostrarProductoActual();
+        calcularValorTotalInventario();
     }
 
     public static void mostrarMenu() {
@@ -79,6 +80,16 @@ public class App {
         }else{
             System.out.println("No hay datos de producto registrados actualmente.");
         }
+    }
+
+    private static double calcularValorTotalInventario() {
+        double valorTotal = -1;
+        if (!nombre.equals("N/A")) {
+            valorTotal = precioUnitario * cantidad;
+        }else{
+            System.out.println("No hay datos registrados para calcular el valor total del inventario.");
+        }
+        return valorTotal;
     }
 
     public static boolean esPrecioValido(double precio){
