@@ -10,7 +10,7 @@ public class Cancion extends Multimedia implements Reproducible{
         this.artista = "Desconocido";
     }
 
-    public Cancion(String titulo, int duracion,String artista){
+    public Cancion(String titulo, int duracion, String artista){
         super(titulo, duracion);
         this.artista = artista;
     }
@@ -34,12 +34,12 @@ public class Cancion extends Multimedia implements Reproducible{
     //Implementación polimórfica
     @Override
     public void reproducir() {
-        System.out.println("Canción reproducida: " + getTitulo() + " del artista: " + this.artista);
+        System.out.println("Reproduciendo: " + getInfo());
     }
 
     @Override
     public void detener() {
-        System.out.println("Canción detenida: " + getTitulo());
+        System.out.println("Deteniendo: " + getInfo());
     }
 
     //Sobreescritura de toString

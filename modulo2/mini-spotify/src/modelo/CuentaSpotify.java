@@ -51,6 +51,10 @@ public class CuentaSpotify {
         this.sesionIniciada = sesionIniciada;
     }
 
+    public BibliotecaMusical getBiblioteca() {
+        return biblioteca;
+    }
+
     //Metodos
     public void iniciarSesion(String usuario, String password){
         if (this.usuario.equals(usuario) && this.password.equals(password)) {
@@ -66,6 +70,7 @@ public class CuentaSpotify {
             if (contadorPlaylists < maxPlaylists) {
                 playlists[contadorPlaylists] = p;
                 contadorPlaylists++;
+                System.out.println("La playlist: " + p.getNombre() + ", se ha creado correctamente");
             } else {
                 System.out.println("No se puede agregar la playlist: " +
                         p.getNombre() +
@@ -81,8 +86,6 @@ public class CuentaSpotify {
             Playlist playlistEncontrada = buscarPlaylist(playlist);
             if (playlistEncontrada != null) {
                 playlistEncontrada.agregarCancion(c);
-                System.out.println("Se ha agregado la canción: " + c.getTitulo() + ", a la playlist: "
-                         + playlistEncontrada.getNombre());
             }else{
                 System.out.println("No se encontró una playlist con el nombre: " + playlist);
             }   
@@ -104,6 +107,19 @@ public class CuentaSpotify {
         }
     }
 
+    public void detener(String playlist, int indexCancion) {
+        if (sesionIniciada) {
+            Playlist playlistEncontrada = buscarPlaylist(playlist);
+            if (playlistEncontrada != null) {
+                playlistEncontrada.detenerCancion(indexCancion);
+            } else {
+                System.out.println("No se encontró una playlist con el nombre: " + playlist);
+            }
+        } else {
+            System.out.println("Inicie sesión para detener la canción.");
+        }
+    }
+
     public void cerrarSesion(){
         this.sesionIniciada = false;
         System.out.println("Se ha cerrado la sesión");
@@ -116,6 +132,17 @@ public class CuentaSpotify {
             }
         }
         return null;
+    }
+
+    public void listarPlaylists() {
+        Playlist playlistInicial = playlists[0];
+        if (playlistInicial != null) {
+            for (int i = 0; i < contadorPlaylists; i++) {
+                System.out.println((i + 1) + ". " + playlists[i].getInfo());
+            }
+        } else {
+            System.out.println("No hay playlists para listar.");
+        }
     }
     
 }

@@ -35,6 +35,7 @@ public class Playlist {
         if (contadorCanciones < maxCanciones) {
             canciones[contadorCanciones] = c;
             contadorCanciones++;
+            System.out.println("Se ha agregado la canción: " + c.getTitulo() + ", a la playlist: " + this.nombre);
         }else{
             System.out.println("No se puede agregar la canción: " + 
             c.getTitulo() + 
@@ -76,14 +77,35 @@ public class Playlist {
     public void reproducirCancion(int index){
         if (index >= 0 && index < contadorCanciones) {
             Cancion cancion = canciones[index];
-            System.out.println("Reproduciendo: " + cancion.getInfo());
+            if (cancion != null) {
+                cancion.reproducir();
+            } else {
+                System.out.println("No hay una canción en el índice especificado.");
+            }
         }else{
+            System.out.println("Índice de canción inválido");
+        }
+    }
+
+    public void detenerCancion(int index) {
+        if (index >= 0 && index < contadorCanciones) {
+            Cancion cancion = canciones[index];
+            if (cancion != null) {
+                cancion.detener();
+            } else {
+                System.out.println("No hay una canción en el índice especificado.");
+            }
+        } else {
             System.out.println("Índice de canción inválido");
         }
     }
 
     public boolean estaLlena(){
         return contadorCanciones >= maxCanciones;
+    }
+
+    public String getInfo(){
+        return "Playlist: " + this.nombre + ", Capacidad: " + this.maxCanciones + " canciones, Canciones agregadas: " + this.contadorCanciones;
     }
 
     

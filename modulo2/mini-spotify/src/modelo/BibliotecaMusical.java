@@ -53,4 +53,13 @@ public class BibliotecaMusical {
         }
     }
 
+    public Cancion obtenerCancionIndice(int index){
+        if (index >= 0 && index < contadorCatalogo) {
+            return catalogo[index];
+        } else {
+            System.out.println("Índice fuera de rango. No se puede obtener la canción.");
+            return null;
+        }
+    }
+
 }
