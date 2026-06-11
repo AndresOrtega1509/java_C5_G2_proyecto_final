@@ -1,5 +1,6 @@
 package app;
 
+import modelo.BibliotecaMusical;
 import modelo.Cancion;
 import modelo.CuentaSpotify;
 import modelo.Playlist;
@@ -8,7 +9,7 @@ import java.util.Scanner;
 public class SpotifyApp {
     static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) throws Exception{
-        CuentaSpotify cuenta1 = crearCuentaSpotify("Andres01", "123", 100, 10);
+        CuentaSpotify cuenta1 = crearCuentaSpotify("Andres01", "123", 100, 4);
         //Crear canciones de prueba
         Cancion cancion1 = new Cancion("Traicion", 240, "Romeo");
         Cancion cancion2 = new Cancion("Fiesta", 200, "Arcangel");
@@ -19,9 +20,9 @@ public class SpotifyApp {
         Playlist playlist2 = new Playlist("Populares", 5);
 
         //Agregar canciones a la biblioteca musical (catalogo)
-        cuenta1.getBiblioteca().agregarCancion(cancion1);
-        cuenta1.getBiblioteca().agregarCancion(cancion2);
-        cuenta1.getBiblioteca().agregarCancion(cancion3);
+        cuenta1.agregarCancionABiblioteca(cancion1);
+        cuenta1.agregarCancionABiblioteca(cancion2);
+        cuenta1.agregarCancionABiblioteca(cancion3);
 
         // Iniciar sesión en la cuenta de spotify
         cuenta1.iniciarSesion("Andres01", "123");
@@ -87,12 +88,21 @@ public class SpotifyApp {
                                 }
                                 break;
                             case 4:
+                                // Eliminar canción del catalogo
+                                System.out.println("-- Canciones en la biblioteca --");
+                                cuenta1.getBiblioteca().listarCatalogo();
+                                System.out.print("Ingrese el número de la canción a eliminar de la biblioteca: ");
+                                int numCancion = scanner.nextInt();
+                                scanner.nextLine(); // Limpiar buffer
+                                cuenta1.eliminarCancionDeBiblioteca(numCancion - 1);
+                                break;
+                            case 5:
                                 // Volver al menú principal
                                 break;
                             default:
                                 System.out.println("Opción no válida.");
                         }
-                    }while (opcionMenuBiblioteca != 4);
+                    }while (opcionMenuBiblioteca != 5);
                     break;
                 case 3:
                     // Gestionar playlists
@@ -240,7 +250,8 @@ public class SpotifyApp {
                 1. Listar canciones
                 2. Agregar canción
                 3. Buscar canción por nombre
-                4. Volver al menú principal
+                4. Eliminar canción
+                5. Volver al menú principal
                 """;
         System.out.print(menu);
         System.out.print("Ingrese la opción deseada: ");

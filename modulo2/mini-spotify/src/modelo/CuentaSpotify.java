@@ -10,7 +10,6 @@ public class CuentaSpotify {
     // Atributos auxiliares del arreglo
     private int contadorPlaylists;
     private int maxPlaylists; // Representa la longitud del arreglo playlists
-    private int contadorBiblioteca;
     private int capacidadBiblioteca; // Representa la longitud del arreglo catalogo
 
     //Constructor
@@ -23,7 +22,6 @@ public class CuentaSpotify {
         this.capacidadBiblioteca = capacidadBiblioteca;
         this.biblioteca = new BibliotecaMusical(capacidadBiblioteca);
         this.contadorPlaylists = 0;
-        this.contadorBiblioteca = 0;
     }
 
     //Getters and Setters
@@ -143,6 +141,14 @@ public class CuentaSpotify {
         } else {
             System.out.println("No hay playlists para listar.");
         }
+    }
+
+    public void agregarCancionABiblioteca(Cancion cancion){
+        biblioteca.agregarCancion(cancion);
+    }
+
+    public void eliminarCancionDeBiblioteca(int indice){
+        biblioteca.eliminarCancionDeBiblioteca(indice);
     }
     
 }

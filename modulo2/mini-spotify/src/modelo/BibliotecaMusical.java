@@ -25,6 +25,7 @@ public class BibliotecaMusical {
         if (contadorCatalogo < maxCatalogo) {
             catalogo[contadorCatalogo] = c;
             contadorCatalogo++;
+            System.out.println("Se ha agregado la canción: " + c.getTitulo() + ", al catalogo");
         } else {
             System.out.println("No se puede agregar la canción: " +
                     c.getTitulo() +
@@ -59,6 +60,17 @@ public class BibliotecaMusical {
         } else {
             System.out.println("Índice fuera de rango. No se puede obtener la canción.");
             return null;
+        }
+    }
+
+    public void eliminarCancionDeBiblioteca(int indice){
+        if (obtenerCancionIndice(indice) != null) {
+            for (int i = indice; i < contadorCatalogo - 1; i++) {
+                catalogo[i] = catalogo[i + 1];
+            }
+            catalogo[contadorCatalogo - 1] = null;
+            contadorCatalogo--;
+            System.out.println("Canción eliminada correctamente.");
         }
     }
 
