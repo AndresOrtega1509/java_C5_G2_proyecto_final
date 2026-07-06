@@ -3,6 +3,8 @@ package com.plataforma.cursos.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.plataforma.cursos.exception.EstudianteNoEncontradoException;
+
 public class Curso {
     private String nombre;
     private String codigo;
@@ -34,6 +36,25 @@ public class Curso {
 
     public List<Estudiante> getEstudiantes() {
         return estudiantes;
+    }
+
+    public boolean estaLleno(){
+        return estudiantes.size() >= capacidadMaxima;
+    }
+
+    public void agregarEstudiante(Estudiante estudiante){
+        if (!estaLleno()) {
+            this.estudiantes.add(estudiante);
+        }
+    }
+
+    public void eliminarEstudiante(String id) throws EstudianteNoEncontradoException{
+        for (Estudiante estudiante : estudiantes) {
+            if (estudiante.getId().equals(id)) {
+                this.estudiantes.remove(estudiante);
+            }
+        }
+        throw new EstudianteNoEncontradoException("Estudiante con id: " + id + ", no encontrado en el curso: " + nombre);
     }
 
     @Override
