@@ -1,0 +1,143 @@
+2026-07-07 08:45:25 [main] INFO  com.plataforma.cursos.service.CursoService - Se inicializa InscripcionService
+2026-07-07 08:45:25 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Andres al curso: Futbol
+2026-07-07 08:45:25 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Andres inscrito exitosamente al curso: Futbol
+2026-07-07 08:45:25 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Sara al curso: Futbol
+2026-07-07 08:45:25 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Sara inscrito exitosamente al curso: Futbol
+2026-07-07 08:45:25 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Sara al curso: Tenis
+2026-07-07 08:45:25 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Sara inscrito exitosamente al curso: Tenis
+2026-07-07 08:45:25 [main] INFO  com.plataforma.cursos.service.CursoService - Listando inscripciones para el estudiante: Sara
+2026-07-07 08:45:25 [main] INFO  com.plataforma.cursos.service.CursoService - Se encontraron 2 inscripciones para el estudiante: Sara
+2026-07-07 08:45:25 [main] INFO  com.plataforma.cursos.service.CursoService - Listando inscripciones para el estudiante: Andres
+2026-07-07 08:45:25 [main] INFO  com.plataforma.cursos.service.CursoService - Se encontraron 1 inscripciones para el estudiante: Andres
+2026-07-07 08:46:59 [main] INFO  com.plataforma.cursos.service.CursoService - Se inicializa InscripcionService
+2026-07-07 08:46:59 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Andres al curso: Futbol
+2026-07-07 08:46:59 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Andres inscrito exitosamente al curso: Futbol
+2026-07-07 08:46:59 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Sara al curso: Futbol
+2026-07-07 08:46:59 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Sara inscrito exitosamente al curso: Futbol
+2026-07-07 08:46:59 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Sara al curso: Tenis
+2026-07-07 08:46:59 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Sara inscrito exitosamente al curso: Tenis
+2026-07-07 08:46:59 [main] INFO  com.plataforma.cursos.service.CursoService - Listando inscripciones para el estudiante: Sara
+2026-07-07 08:46:59 [main] INFO  com.plataforma.cursos.service.CursoService - Se encontraron 2 inscripciones para el estudiante: Sara
+2026-07-07 08:46:59 [main] INFO  com.plataforma.cursos.service.CursoService - Listando inscripciones para el estudiante: Andres
+2026-07-07 08:46:59 [main] INFO  com.plataforma.cursos.service.CursoService - Se encontraron 1 inscripciones para el estudiante: Andres
+2026-07-07 08:48:41 [main] INFO  com.plataforma.cursos.service.CursoService - Se inicializa InscripcionService
+2026-07-07 08:48:41 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Andres al curso: Futbol
+2026-07-07 08:48:41 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Andres inscrito exitosamente al curso: Futbol
+2026-07-07 08:48:41 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Sara al curso: Futbol
+2026-07-07 08:48:41 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Sara inscrito exitosamente al curso: Futbol
+2026-07-07 08:48:41 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Pedro al curso: Futbol
+2026-07-07 08:48:41 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Pedro inscrito exitosamente al curso: Futbol
+2026-07-07 08:48:41 [main] INFO  com.plataforma.cursos.service.CursoService - Listando todas las inscripciones
+2026-07-07 08:48:41 [main] INFO  com.plataforma.cursos.service.CursoService - Listando todas las inscripciones
+2026-07-07 08:48:41 [main] INFO  com.plataforma.cursos.service.CursoService - Se inicializa InscripcionService
+2026-07-07 08:48:41 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Andres al curso: Futbol
+2026-07-07 08:48:41 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Andres inscrito exitosamente al curso: Futbol
+2026-07-07 08:48:41 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Sara al curso: Futbol
+2026-07-07 08:48:41 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Sara inscrito exitosamente al curso: Futbol
+2026-07-07 08:48:41 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Pedro al curso: Futbol
+2026-07-07 08:48:41 [main] WARN  com.plataforma.cursos.service.CursoService - No se puede inscribir al estudiante: Pedro. El curso: Futbol esta lleno
+2026-07-07 08:48:41 [main] INFO  com.plataforma.cursos.service.CursoService - Se inicializa InscripcionService
+2026-07-07 08:48:50 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Andres al curso: Futbol
+2026-07-07 08:48:50 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Andres inscrito exitosamente al curso: Futbol
+2026-07-07 08:48:51 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Sara al curso: Futbol
+2026-07-07 08:48:51 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Sara inscrito exitosamente al curso: Futbol
+2026-07-07 08:48:54 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Sara al curso: Tenis
+2026-07-07 08:48:54 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Sara inscrito exitosamente al curso: Tenis
+2026-07-07 08:49:06 [main] INFO  com.plataforma.cursos.service.CursoService - Listando inscripciones para el estudiante: Sara
+2026-07-07 08:49:06 [main] INFO  com.plataforma.cursos.service.CursoService - Se encontraron 2 inscripciones para el estudiante: Sara
+2026-07-07 08:49:10 [main] INFO  com.plataforma.cursos.service.CursoService - Listando inscripciones para el estudiante: Andres
+2026-07-07 08:49:10 [main] INFO  com.plataforma.cursos.service.CursoService - Se encontraron 1 inscripciones para el estudiante: Andres
+2026-07-07 08:49:41 [main] INFO  com.plataforma.cursos.service.CursoService - Se inicializa InscripcionService
+2026-07-07 08:49:41 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Andres al curso: Futbol
+2026-07-07 08:49:41 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Andres inscrito exitosamente al curso: Futbol
+2026-07-07 08:49:41 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Sara al curso: Futbol
+2026-07-07 08:49:41 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Sara inscrito exitosamente al curso: Futbol
+2026-07-07 08:49:41 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Pedro al curso: Futbol
+2026-07-07 08:49:41 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Pedro inscrito exitosamente al curso: Futbol
+2026-07-07 08:49:41 [main] INFO  com.plataforma.cursos.service.CursoService - Listando todas las inscripciones
+2026-07-07 08:49:41 [main] INFO  com.plataforma.cursos.service.CursoService - Listando todas las inscripciones
+2026-07-07 08:49:41 [main] INFO  com.plataforma.cursos.service.CursoService - Se inicializa InscripcionService
+2026-07-07 08:49:41 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Andres al curso: Futbol
+2026-07-07 08:49:41 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Andres inscrito exitosamente al curso: Futbol
+2026-07-07 08:49:41 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Sara al curso: Futbol
+2026-07-07 08:49:41 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Sara inscrito exitosamente al curso: Futbol
+2026-07-07 08:49:41 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Pedro al curso: Futbol
+2026-07-07 08:49:41 [main] WARN  com.plataforma.cursos.service.CursoService - No se puede inscribir al estudiante: Pedro. El curso: Futbol esta lleno
+2026-07-07 08:49:41 [main] INFO  com.plataforma.cursos.service.CursoService - Se inicializa InscripcionService
+2026-07-07 08:49:45 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Andres al curso: Futbol
+2026-07-07 08:49:45 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Andres inscrito exitosamente al curso: Futbol
+2026-07-07 08:49:45 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Sara al curso: Futbol
+2026-07-07 08:49:45 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Sara inscrito exitosamente al curso: Futbol
+2026-07-07 08:49:46 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Sara al curso: Tenis
+2026-07-07 08:49:46 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Sara inscrito exitosamente al curso: Tenis
+2026-07-07 08:49:50 [main] INFO  com.plataforma.cursos.service.CursoService - Listando inscripciones para el estudiante: Sara
+2026-07-07 08:51:13 [main] INFO  com.plataforma.cursos.service.CursoService - Se encontraron 2 inscripciones para el estudiante: Sara
+2026-07-07 09:25:15 [main] INFO  com.plataforma.cursos.service.CursoService - Listando inscripciones para el estudiante: Andres
+2026-07-07 09:26:42 [main] INFO  com.plataforma.cursos.service.CursoService - Se encontraron 1 inscripciones para el estudiante: Andres
+2026-07-07 09:31:07 [main] INFO  com.plataforma.cursos.service.CursoService - Se inicializa InscripcionService
+2026-07-07 09:31:07 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Andres al curso: Futbol
+2026-07-07 09:31:07 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Andres inscrito exitosamente al curso: Futbol
+2026-07-07 09:31:07 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Sara al curso: Futbol
+2026-07-07 09:31:07 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Sara inscrito exitosamente al curso: Futbol
+2026-07-07 09:31:07 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Sara al curso: Tenis
+2026-07-07 09:31:07 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Sara inscrito exitosamente al curso: Tenis
+2026-07-07 09:31:07 [main] INFO  com.plataforma.cursos.service.CursoService - Listando inscripciones para el estudiante: Sara
+2026-07-07 09:31:07 [main] INFO  com.plataforma.cursos.service.CursoService - Se encontraron 2 inscripciones para el estudiante: Sara
+2026-07-07 09:31:07 [main] INFO  com.plataforma.cursos.service.CursoService - Listando inscripciones para el estudiante: Andres
+2026-07-07 09:31:07 [main] INFO  com.plataforma.cursos.service.CursoService - Se encontraron 1 inscripciones para el estudiante: Andres
+2026-07-07 09:31:07 [main] INFO  com.plataforma.cursos.service.CursoService - Listando inscripciones para el estudiante: Sara
+2026-07-07 09:31:07 [main] INFO  com.plataforma.cursos.service.CursoService - Se encontraron 2 inscripciones para el estudiante: Sara
+2026-07-07 09:31:20 [main] INFO  com.plataforma.cursos.service.CursoService - Se inicializa InscripcionService
+2026-07-07 09:31:21 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Andres al curso: Futbol
+2026-07-07 09:31:21 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Andres inscrito exitosamente al curso: Futbol
+2026-07-07 09:31:21 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Sara al curso: Futbol
+2026-07-07 09:31:21 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Sara inscrito exitosamente al curso: Futbol
+2026-07-07 09:31:21 [main] INFO  com.plataforma.cursos.service.CursoService - Listando todas las inscripciones
+2026-07-07 09:31:29 [main] INFO  com.plataforma.cursos.service.CursoService - Se inicializa InscripcionService
+2026-07-07 09:31:29 [main] INFO  com.plataforma.cursos.service.CursoService - Listando inscripciones para el estudiante: Sara
+2026-07-07 09:31:29 [main] WARN  com.plataforma.cursos.service.CursoService - No se encontraron inscripciones para el estudiante: Sara
+2026-07-07 09:33:11 [main] INFO  com.plataforma.cursos.service.CursoService - Se inicializa InscripcionService
+2026-07-07 09:33:11 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Sara al curso: Futbol
+2026-07-07 09:33:11 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Sara inscrito exitosamente al curso: Futbol
+2026-07-07 09:33:11 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Sara al curso: Tenis
+2026-07-07 09:33:11 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Sara inscrito exitosamente al curso: Tenis
+2026-07-07 09:33:12 [main] INFO  com.plataforma.cursos.service.CursoService - Listando inscripciones para el estudiante: Sara
+2026-07-07 09:33:12 [main] INFO  com.plataforma.cursos.service.CursoService - Se encontraron 2 inscripciones para el estudiante: Sara
+2026-07-07 09:33:12 [main] INFO  com.plataforma.cursos.service.CursoService - Listando inscripciones para el estudiante: Andres
+2026-07-07 09:33:12 [main] WARN  com.plataforma.cursos.service.CursoService - No se encontraron inscripciones para el estudiante: Andres
+2026-07-07 09:33:12 [main] ERROR com.plataforma.cursos.InscripcionServiceTest - Estudiante no encontrado: No se encontraron inscripciones para el estudiante: Andres
+2026-07-07 09:34:01 [main] INFO  com.plataforma.cursos.service.CursoService - Se inicializa InscripcionService
+2026-07-07 09:34:01 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Andres al curso: Futbol
+2026-07-07 09:34:01 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Andres inscrito exitosamente al curso: Futbol
+2026-07-07 09:34:01 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Sara al curso: Futbol
+2026-07-07 09:34:01 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Sara inscrito exitosamente al curso: Futbol
+2026-07-07 09:34:01 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Sara al curso: Tenis
+2026-07-07 09:34:01 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Sara inscrito exitosamente al curso: Tenis
+2026-07-07 09:34:01 [main] INFO  com.plataforma.cursos.service.CursoService - Listando inscripciones para el estudiante: Sara
+2026-07-07 09:34:01 [main] INFO  com.plataforma.cursos.service.CursoService - Se encontraron 2 inscripciones para el estudiante: Sara
+2026-07-07 09:34:01 [main] INFO  com.plataforma.cursos.service.CursoService - Listando inscripciones para el estudiante: Andres
+2026-07-07 09:34:01 [main] INFO  com.plataforma.cursos.service.CursoService - Se encontraron 1 inscripciones para el estudiante: Andres
+2026-07-07 09:34:01 [main] INFO  com.plataforma.cursos.service.CursoService - Listando inscripciones para el estudiante: Sara
+2026-07-07 09:34:01 [main] INFO  com.plataforma.cursos.service.CursoService - Se encontraron 2 inscripciones para el estudiante: Sara
+2026-07-07 09:35:46 [main] INFO  com.plataforma.cursos.service.CursoService - Se inicializa InscripcionService
+2026-07-07 09:35:46 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Sara al curso: Futbol
+2026-07-07 09:35:46 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Sara inscrito exitosamente al curso: Futbol
+2026-07-07 09:35:46 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Sara al curso: Tenis
+2026-07-07 09:35:46 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Sara inscrito exitosamente al curso: Tenis
+2026-07-07 09:35:46 [main] INFO  com.plataforma.cursos.service.CursoService - Listando inscripciones para el estudiante: Sara
+2026-07-07 09:35:46 [main] INFO  com.plataforma.cursos.service.CursoService - Se encontraron 2 inscripciones para el estudiante: Sara
+2026-07-07 09:35:46 [main] INFO  com.plataforma.cursos.service.CursoService - Listando inscripciones para el estudiante: Andres
+2026-07-07 09:35:46 [main] WARN  com.plataforma.cursos.service.CursoService - No se encontraron inscripciones para el estudiante: Andres
+2026-07-07 09:37:10 [main] INFO  com.plataforma.cursos.service.CursoService - Se inicializa InscripcionService
+2026-07-07 09:37:10 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Andres al curso: Futbol
+2026-07-07 09:37:10 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Andres inscrito exitosamente al curso: Futbol
+2026-07-07 09:37:10 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Sara al curso: Futbol
+2026-07-07 09:37:10 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Sara inscrito exitosamente al curso: Futbol
+2026-07-07 09:37:10 [main] INFO  com.plataforma.cursos.service.CursoService - Inscribiendo estudiante: Sara al curso: Tenis
+2026-07-07 09:37:10 [main] INFO  com.plataforma.cursos.service.CursoService - Estudiante: Sara inscrito exitosamente al curso: Tenis
+2026-07-07 09:37:10 [main] INFO  com.plataforma.cursos.service.CursoService - Listando inscripciones para el estudiante: Sara
+2026-07-07 09:37:10 [main] INFO  com.plataforma.cursos.service.CursoService - Se encontraron 2 inscripciones para el estudiante: Sara
+2026-07-07 09:37:10 [main] INFO  com.plataforma.cursos.service.CursoService - Listando inscripciones para el estudiante: Andres
+2026-07-07 09:37:10 [main] INFO  com.plataforma.cursos.service.CursoService - Se encontraron 1 inscripciones para el estudiante: Andres
+2026-07-07 09:37:10 [main] INFO  com.plataforma.cursos.service.CursoService - Listando inscripciones para el estudiante: Sara
+2026-07-07 09:37:10 [main] INFO  com.plataforma.cursos.service.CursoService - Se encontraron 2 inscripciones para el estudiante: Sara

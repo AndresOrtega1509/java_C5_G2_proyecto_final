@@ -11,7 +11,7 @@ import com.plataforma.cursos.model.Estudiante;
 import com.plataforma.cursos.model.Inscripcion;
 
 public class InscripcionService {
-    private static final Logger logger = LogManager.getLogger(CursoService.class);
+    private static final Logger logger = LogManager.getLogger(InscripcionService.class);
 
     private List<Inscripcion> inscripciones;
 
