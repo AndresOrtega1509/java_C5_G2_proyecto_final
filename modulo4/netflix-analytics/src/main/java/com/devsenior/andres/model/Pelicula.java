@@ -1,23 +1,23 @@
 package com.devsenior.andres.model;
 
 public class Pelicula {
-    private String id;
+    private int id;
     private String titulo;
     private Genero genero;
     private int duracion;
 
-    public Pelicula(String id, String titulo, Genero genero, int duracion) {
+    public Pelicula(int id, String titulo, Genero genero, int duracion) {
         this.id = id;
         this.titulo = titulo;
         this.genero = genero;
         this.duracion = duracion;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
