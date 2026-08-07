@@ -2,7 +2,7 @@ package com.devsenior.andres.transport_fare.service.impl;
 
 import org.springframework.stereotype.Component;
 
-import com.devsenior.andres.transport_fare.service.IFareStrategy;
+import com.devsenior.andres.transport_fare.service.interfaces.IFareStrategy;
 
 @Component
 public class EconomyFareStrategy implements IFareStrategy{

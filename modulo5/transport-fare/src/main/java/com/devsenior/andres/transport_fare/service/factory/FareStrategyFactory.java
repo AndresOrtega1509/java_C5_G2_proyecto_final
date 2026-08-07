@@ -3,10 +3,10 @@ package com.devsenior.andres.transport_fare.service.factory;
 import org.springframework.stereotype.Component;
 
 import com.devsenior.andres.transport_fare.model.FareType;
-import com.devsenior.andres.transport_fare.service.IFareStrategy;
 import com.devsenior.andres.transport_fare.service.impl.EconomyFareStrategy;
 import com.devsenior.andres.transport_fare.service.impl.PremiumFareStrategy;
 import com.devsenior.andres.transport_fare.service.impl.SurgeFareStrategy;
+import com.devsenior.andres.transport_fare.service.interfaces.IFareStrategy;
 
 @Component
 public class FareStrategyFactory {
