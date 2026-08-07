@@ -3,9 +3,13 @@ package com.devsenior.andres.transport_fare.service;
 import java.util.Comparator;
 import java.util.List;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
+import com.devsenior.andres.transport_fare.dto.TripDetailsResponse;
 import com.devsenior.andres.transport_fare.dto.TripRequest;
+import com.devsenior.andres.transport_fare.dto.TripResponse;
 import com.devsenior.andres.transport_fare.model.FareType;
 import com.devsenior.andres.transport_fare.model.Trip;
 import com.devsenior.andres.transport_fare.repository.interfaces.ITripRepository;
@@ -25,8 +29,14 @@ public class TripService implements ITripService{
     Aqui el service recibira del controlador el TripRequest (DTO)
      */
     @Override
-    public Trip createTrip(TripRequest tripRequest){
-        FareType fareType = FareType.valueOf(tripRequest.getFareType());
+    public TripResponse createTrip(TripRequest tripRequest){
+        FareType fareType;
+        try {
+            fareType = FareType.valueOf(tripRequest.getFareType().toUpperCase());
+        } catch (IllegalArgumentException | NullPointerException e) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, 
+                String.format("The fare type is invalid: %s", tripRequest.getFareType()));
+        }
         IFareStrategy fareStrategy = FareStrategyFactory.determinateFareStrategy(fareType);
         double totalFare = fareStrategy.calculateFare(tripRequest.getDistance(), tripRequest.getDuration());
 
@@ -36,7 +46,8 @@ public class TripService implements ITripService{
         trip.setFareType(fareType);
         trip.setTotalFare(totalFare);
         trip.setUserEmail(tripRequest.getUserEmail());
-        return this.tripRepository.save(trip);
+        Trip tripSave = this.tripRepository.save(trip);
+        return new TripResponse(tripSave.getId(), totalFare, fareType.toString());
     }
 
     /*
@@ -44,10 +55,17 @@ public class TripService implements ITripService{
     los modelos a DTOs antes de enviarlos al cliente
      */
     @Override
-    public List<Trip> getTrips(){
+    public List<TripDetailsResponse> getTrips(){
         return this.tripRepository.findAll()
                                   .stream()
-                                  .sorted(Comparator.comparingDouble(Trip::getTotalFare).reversed())
+                                  .map(trip -> new TripDetailsResponse(
+                                    trip.getId(), 
+                                    trip.getDistance(), 
+                                    trip.getDuration(), 
+                                    trip.getFareType().toString(), 
+                                    trip.getUserEmail(), 
+                                    trip.getTotalFare()))
+                                  .sorted(Comparator.comparingDouble(TripDetailsResponse::totalFare).reversed())
                                   .toList();
     }
 }
